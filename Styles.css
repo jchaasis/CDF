@@ -45,7 +45,7 @@ header {
   top: 20px;
   width: 150px;
   background-color: rgb(166,159,140);
-  display: flex;
+  display: none;
   flex-direction: column;
   justify-content: space-around;
   list-style: none;
@@ -79,4 +79,18 @@ header {
 
 .navTab {
   color: white;
+}
+
+/******************Contacts section*****************/
+
+#map {
+  height: 300px;
+  width: 100%;
+}
+
+
+footer {
+  width: 100%;
+  height: 30px;
+  background-color: rgb(113, 9, 170);
 }

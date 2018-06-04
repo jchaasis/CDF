@@ -39,7 +39,7 @@ let bar2 = document.getElementById('bar2')
 let bar3 = document.getElementById('bar3')
 
 //track the status of the navbar
-let open = true;
+let open = false;
 
 //grab the navigation links list
 let navList = document.getElementById('navList')
