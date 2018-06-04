@@ -1,0 +1,21 @@
+/************ Header *****************/
+header {
+  background-color: black;
+
+}
+  /* Nav */
+#navBar {
+
+}
+
+#navList {
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+  padding: 2px;
+
+}
+
+.navTab {
+  color: white;
+}
