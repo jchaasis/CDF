@@ -31,25 +31,27 @@
 //grab the toggle button
 let toggleBar = document.getElementById('navToggle');
 //add event listeners
-toggleBar.addEventListener('click', ()=>handleHover())
+toggleBar.addEventListener('click', ()=>handleClick())
 
 //grab the individual bars
 let bar1 = document.getElementById('bar1')
 let bar2 = document.getElementById('bar2')
 let bar3 = document.getElementById('bar3')
 
-
 //track the status of the navbar
-let open = false;
+let open = true;
 
-function handleHover(){
+//grab the navigation links list
+let navList = document.getElementById('navList')
 
+//when the bars are clicked
+function handleClick(){
 
 //if the nav bar is collapsed
  if (open === false){
    //top bar
    bar1.style.position = 'absolute'
-   bar1.style.backgroundColor = 'red';
+   bar1.style.backgroundColor = 'rgb(233, 0, 58)';
    bar1.style.margin = 0 + 'px';
    bar1.style.transform = 'rotate(45deg)';
 
@@ -60,15 +62,16 @@ function handleHover(){
 
    //bottom bar
    bar3.style.position = 'absolute'
-   bar3.style.backgroundColor = 'red';
+   bar3.style.backgroundColor = 'rgb(233, 0, 58)';
    bar3.style.margin = 0 + 'px';
    bar3.style.transform = 'rotate(-45deg)';
 
+   //open up the nav links
+   navList.style.display = 'flex'
    //set the status to open
    open = true;
 
  } else {
-
    //return to the closed state
    //top bar
    bar1.style.position = 'inherit'
@@ -87,7 +90,10 @@ function handleHover(){
    bar3.style.backgroundColor = 'white';
    bar3.style.transform = 'rotate(0deg)';
    bar3.style.margin = 5 + 'px';
+
+   //collapse the nav links
+   navList.style.display = 'none'
+
    open = false;
  }
-
 }
