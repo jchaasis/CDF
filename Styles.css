@@ -125,6 +125,21 @@ header {
 #cBlock3 {
   background-color: rgb(88, 224, 0);
 }
+/******************Products section*****************/
+#productsList {
+
+  /* width: 100%; */
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+}
+
+.productImage{
+  background-size: cover;
+  width:25%;
+  height: 250px;
+}
+
 
 
 /******************Contacts section*****************/
