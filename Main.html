@@ -5,13 +5,13 @@
     <meta charset:"utf-8">
     <title>Crazy Daisy Finds</title>
     <!--styles-->
-     <link href="Styles.css" rel="stylesheet" title="Default Style">
-
-     <!-- Javascript -->
-     <script src="Javascript/Header.js" defer></script>
-      <script src="Javascript/Contact.js" defer></script>
-     <!-- google maps  -->
-     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBxy348y3X6J5M7n7wnuzjhqd7amWya_t4&callback=initMap"
+    <link href="Styles.css" rel="stylesheet" title="Default Style">
+    <!-- Javascript -->
+    <script src="Javascript/Header.js" defer></script>
+    <script src="Javascript/About.js" defer></script>
+    <script src="Javascript/Contact.js" defer></script>
+    <!-- google maps  -->
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBxy348y3X6J5M7n7wnuzjhqd7amWya_t4&callback=initMap"
    async defer></script>
   </head>
 
@@ -26,18 +26,41 @@
       </nav>
          <ul id="navList">
             <li class="navTab" id='aboutLink'>
-              <p> About </p>
+              <a href="#about"><p> About </p></a>
             </li>
             <li class="navTab" id="productsLink">
               <p> Products </p>
             </li>
             <li class="navTab" id="contactLink">
-              <p> Contact Us </p>
+              <a href="#contact"><p>Contact Us</p></a>
             </li>
           </ul>
+          <div id="slogan">
+            <h1> Mid.</h1>
+            <h1> Mod.</h1>
+            <h1> Hip.</h1>
+          </div>
     </header>
     <main>
       <section id="about">
+        <div class="aboutRow" id="row1">
+          <div class="colorBlock" id="cBlock1">
+            </div>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+            </p>
+          </div>
+          <div class="aboutRow" id="row2">
+            <p id="para2">Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+            </p>
+            <div class="colorBlock" id="cBlock2">
+            </div>
+          </div>
+            <div class="aboutRow" id="row3">
+              <div class="colorBlock" id="cBlock3">
+              </div>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.  Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+              </p>
+            <div>
       </section>
       <section id="products">
       </section>

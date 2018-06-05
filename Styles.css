@@ -9,6 +9,7 @@
 
 body {
   margin: 0px;
+  margin-top: 0px;
   padding: 0px;
 }
 /************ Header *****************/
@@ -17,17 +18,19 @@ header {
   width: 100%;
   height: 600px;
   background-image: url("Images/header2.jpg");
+  /* background-attachment: fixed; */
+
   background-size: cover;
 }
   /* Nav */
 #navBar {
+  margin-top: 0px;
   display: flex;
   align-items: center;
   position: fixed;
   height: 40px;
   width: 100%;
   background-color: rgb(166,159,140);
-  padding-left: 10px;
   padding-right: 0px;
 }
 
@@ -80,6 +83,49 @@ header {
 .navTab {
   color: white;
 }
+
+/******************About section*****************/
+#about {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.aboutRow {
+  display: flex;
+  flex-direction: row;
+}
+
+#about p {
+  text-align: center;
+  align-self: center;
+  width: 40%;
+}
+/* row two needs to start on the right side of the viewport*/
+#row2{
+  display: flex;
+  justify-content: flex-end;
+}
+
+
+.colorBlock {
+  width: 30%;
+  background-color: black;
+  transition-property: width;
+  transition-duration: 1s;
+}
+
+#cBlock1 {
+  background-color: rgb(233, 0, 58);
+}
+#cBlock2 {
+  background-color: rgb(255, 255, 0);
+  transition
+}
+#cBlock3 {
+  background-color: rgb(88, 224, 0);
+}
+
 
 /******************Contacts section*****************/
 
