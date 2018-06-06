@@ -4,7 +4,6 @@
 //when the bar is clicked, the middle bar fades out and the other two rotate to turn into an X. The navigation dropdown will appear simultanously.
 
 
-
 // //If the viewing device is a touch screen, we need to have a different event handler than if the device is a laptop/pc. Help for this portion came from multiple places, but ultimale
 //
 // let mobile;
@@ -51,7 +50,7 @@ function handleClick(){
  if (open === false){
    //top bar
    bar1.style.position = 'absolute'
-   bar1.style.backgroundColor = 'rgb(233, 0, 58)';
+   // bar1.style.backgroundColor = 'rgb(233, 0, 58)';
    bar1.style.margin = 0 + 'px';
    bar1.style.transform = 'rotate(45deg)';
 
@@ -62,7 +61,7 @@ function handleClick(){
 
    //bottom bar
    bar3.style.position = 'absolute'
-   bar3.style.backgroundColor = 'rgb(233, 0, 58)';
+   // bar3.style.backgroundColor = 'rgb(233, 0, 58)';
    bar3.style.margin = 0 + 'px';
    bar3.style.transform = 'rotate(-45deg)';
 
@@ -76,7 +75,7 @@ function handleClick(){
    //top bar
    bar1.style.position = 'inherit'
 
-   bar1.style.backgroundColor = 'white';
+   // bar1.style.backgroundColor = 'white';
    bar1.style.transform = 'rotate(0deg)';
    bar1.style.margin = 5 + 'px';
 
@@ -87,7 +86,7 @@ function handleClick(){
    //bottom bar
    bar3.style.position = 'relative'
 
-   bar3.style.backgroundColor = 'white';
+   // bar3.style.backgroundColor = 'white';
    bar3.style.transform = 'rotate(0deg)';
    bar3.style.margin = 5 + 'px';
 

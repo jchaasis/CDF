@@ -5,9 +5,15 @@
   green: 88, 224, 0
   purple: 113, 9, 170
   yellow: rgb(255, 255, 0)
+
+  Fonts:
+  font-family: 'BioRhyme Expanded', serif;
+font-family: 'Economica', sans-serif;
+font-family: 'Monoton', cursive;
  */
 
 body {
+  font-family: 'Economica', sans-serif;
   margin: 0px;
   margin-top: 0px;
   padding: 0px;
@@ -19,7 +25,6 @@ header {
   height: 600px;
   background-image: url("Images/header2.jpg");
   /* background-attachment: fixed; */
-
   background-size: cover;
 }
   /* Nav */
@@ -51,7 +56,9 @@ header {
   display: none;
   flex-direction: column;
   justify-content: space-around;
+  align-items: center;
   list-style: none;
+  padding-left: 0px;
 }
 
 #aboutLink {
@@ -63,6 +70,11 @@ header {
     background-color: rgb(222, 216, 200);
 }
 
+#aboutLink a:visited{
+  color: inherit;
+  text-decoration-color: inherit;
+}
+
 #productsLink {
   text-decoration: underline;
   text-decoration-color: rgb(113, 9, 170);
@@ -72,18 +84,60 @@ header {
     background-color: rgb(222, 216, 200);
 }
 
+#productsLink a:visited{
+  color: inherit;
+  text-decoration-color: inherit;
+}
+
 #contactLink {
   text-decoration: underline;
-  text-decoration-color: rgb(255, 255, 0);
+  text-decoration-color: rgb(233, 0, 58);
 }
+
 #contactLink p:hover{
     background-color: rgb(222, 216, 200);
 }
+
+#contactLink a:visited{
+  color: inherit;
+  text-decoration-color: inherit;
+}
+
 
 .navTab {
   color: white;
 }
 
+#slogan {
+  height: 100%;
+  display: grid;
+  justify-items:center;
+  align-items: center;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+}
+
+header h1{
+  font-family: 'Monoton', cursive;
+  font-size: 300%;
+}
+
+#mid {
+  grid-column: 1 / 1;
+  grid-row: 1 / 1;
+  transition-property: all;
+  transition-duration: 2s;
+}
+
+#mod {
+  grid-column: 2 / 2;
+  grid-row: 2 / 2;
+}
+
+#hip {
+  grid-column: 3 / 3;
+  grid-row: 3 / 3;
+}
 /******************About section*****************/
 #about {
   display: flex;
@@ -109,10 +163,20 @@ header {
 
 
 .colorBlock {
+  display:flex;
+  justify-content: center;
+  align-items: center;
   width: 30%;
   background-color: black;
   transition-property: width;
-  transition-duration: 1s;
+  transition-duration: 750ms;
+  text-align: center;
+}
+
+.colorBlock h1{
+  font-family: 'Monoton', cursive;
+  font-size: 275%;
+  font-weight: lighter;
 }
 
 #cBlock1 {
@@ -134,15 +198,33 @@ header {
   flex-direction: row;
 }
 
-.productImage{
+.prodContainer {
+  width: 25%;
+}
+
+.productTitle {
+  text-align: center;
+  background-color: rgb(166,159,140, .80);
+  color: white;
+}
+
+.productImage {
   background-size: cover;
-  width:25%;
+  width:100%;
   height: 250px;
 }
 
-
-
 /******************Contacts section*****************/
+
+#mediaIcons {
+  display: flex;
+  justify-content: center;
+}
+
+.mediaIcon {
+  width: 50px;
+  height: 50px;
+}
 
 #map {
   height: 300px;
@@ -152,6 +234,18 @@ header {
 
 footer {
   width: 100%;
-  height: 30px;
+  height: 70px;
   background-color: rgb(113, 9, 170);
+}
+
+/* For desktop: */
+@media only screen and (min-width: 700px) {
+  body {
+    width: 80%;
+    margin-left: 10%;
+  }
+  /* TODO: figure out what is going on with the nav bar width; */
+  #navBar{
+    width: 80%;
+  }
 }

@@ -6,6 +6,10 @@
     <title>Crazy Daisy Finds</title>
     <!--styles-->
     <link href="Styles.css" rel="stylesheet" title="Default Style">
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=BioRhyme+Expanded|Economica|Monoton" rel="stylesheet">
+
     <!-- Javascript -->
     <script src="Javascript/Header.js" defer></script>
     <script src="Javascript/About.js" defer></script>
@@ -18,36 +22,55 @@
   </head>
 
   <body>
+    <div id="navBar">
+        <div id='navToggle'>
+          <div class='toggleBar' id='bar1'></div>
+          <div class='toggleBar' id='bar2'></div>
+          <div class='toggleBar' id='bar3'></div>
+        </div>
+    </div>
+     <ul id="navList">
+        <li class="navTab" id='aboutLink'>
+          <a href="#about"><p> About </p></a>
+        </li>
+        <li class="navTab" id="productsLink">
+          <p> Products </p>
+        </li>
+        <li class="navTab" id="contactLink">
+          <a href="#contact"><p>Contact Us</p></a>
+        </li>
+     </ul>
     <header>
-      <nav id="navBar">
+      <!-- <nav id="navBar">
           <div id='navToggle'>
             <div class='toggleBar' id='bar1'></div>
             <div class='toggleBar' id='bar2'></div>
             <div class='toggleBar' id='bar3'></div>
           </div>
       </nav>
-         <ul id="navList">
-            <li class="navTab" id='aboutLink'>
-              <a href="#about"><p> About </p></a>
-            </li>
-            <li class="navTab" id="productsLink">
-              <p> Products </p>
-            </li>
-            <li class="navTab" id="contactLink">
-              <a href="#contact"><p>Contact Us</p></a>
-            </li>
-          </ul>
+       <ul id="navList">
+          <li class="navTab" id='aboutLink'>
+            <a href="#about"><p> About </p></a>
+          </li>
+          <li class="navTab" id="productsLink">
+            <p> Products </p>
+          </li>
+          <li class="navTab" id="contactLink">
+            <a href="#contact"><p>Contact Us</p></a>
+          </li>
+       </ul> -->
           <div id="slogan">
-            <h1> Mid.</h1>
-            <h1> Mod.</h1>
-            <h1> Hip.</h1>
+            <!-- <h1 id="mid"> Mid.</h1> -->
+            <!-- <h1 id="mod"> Mod.</h1> -->
+            <!-- <h1 id="hip"> Hip.</h1> -->
           </div>
     </header>
     <main>
       <section id="about">
         <div class="aboutRow" id="row1">
           <div class="colorBlock" id="cBlock1">
-            </div>
+            <h1 id="mid"> Mid.</h1>
+          </div>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
             </p>
           </div>
@@ -55,34 +78,61 @@
             <p id="para2">Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
             </p>
             <div class="colorBlock" id="cBlock2">
+              <h1 id="mod"> Mod.</h1>
             </div>
           </div>
             <div class="aboutRow" id="row3">
               <div class="colorBlock" id="cBlock3">
+                <h1 id="hip"> Hip.</h1>
               </div>
               <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.  Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
               </p>
             <div>
       </section>
       <section id="products">
+        <h1> Finds </h1>
         <div id="productsList">
-          <div class="productImage">
 
+          <div class="prodContainer">
+            <!-- <h3 class="productTitle">Furniture</h3> -->
+            <div class="productImage">
+              <h3 class="productTitle">Furniture</h3>
+
+            </div>
           </div>
-          <div class="productImage">
+          <div class="prodContainer">
 
+            <div class="productImage">
+              <h3 class="productTitle">Assorted Brass</h3>
+
+            </div>
+              <!-- <h3 class="productTitle">Assorted Brass</h3> -->
           </div>
-          <div class="productImage">
+          <div class="prodContainer">
+              <!-- <h3 class="productTitle">Assorted Glassware</h3> -->
+            <div class="productImage">
+              <h3 class="productTitle">Assorted Glassware</h3>
 
+            </div>
           </div>
-          <div class="productImage">
+          <div class="prodContainer">
+            <div class="productImage">
+              <h3 class="productTitle">And much more</h3>
 
+            </div>
+              <!-- <h3 class="productTitle">And much more</h3> -->
           </div>
-
         </div>
       </section>
 
       <section id="contact">
+        <div>
+          <p> For a complete list of our available inventory, come visit us at Cottage Grove Vintage market or follow us on social media.</p>
+          <div id="mediaIcons">
+            <img class="mediaIcon" src="images/IGlogo.png" alt="Instagram logo">
+            <img class="mediaIcon" src="images/FBlogo.png" alt="Facebook logo">
+          </div>
+        </div>
         <div id="map">
         </div>
       </section>
